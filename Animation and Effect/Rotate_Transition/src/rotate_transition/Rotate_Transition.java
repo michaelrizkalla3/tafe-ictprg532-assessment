@@ -5,8 +5,11 @@
  */
 package rotate_transition;
 
-import javafx.animation.RotateTransition;  
-import javafx.application.Application;  
+import javafx.animation.FadeTransition;
+import javafx.animation.ParallelTransition;
+import javafx.animation.RotateTransition;
+import javafx.animation.ScaleTransition;
+import javafx.application.Application;
 import javafx.geometry.Point3D;  
 import javafx.scene.Group;  
 import javafx.scene.Scene;  
@@ -25,13 +28,16 @@ public class Rotate_Transition extends Application {
    @Override  
     public void start(Stage primaryStage) throws Exception {  
         // TODO Auto-generated method stub  
-      
+
+
         //Creating Rectangle   
         Rectangle rect = new Rectangle(200,100,200,200);  
         rect.setFill(Color.LIMEGREEN);  
         rect.setStroke(Color.HOTPINK);  
-        rect.setStrokeWidth(5);  
-          
+        rect.setStrokeWidth(5);
+
+       ParallelTransition parallelTransition = new ParallelTransition();
+
         //Instantiating RotateTransition class   
         RotateTransition rotate = new RotateTransition();  
           
@@ -55,17 +61,32 @@ public class Rotate_Transition extends Application {
         rotate.setNode(rect);  
           
         //playing the transition   
-        rotate.play();  
-          
-        //Configuring Group and Scene   
+//        rotate.play();
+          parallelTransition.getChildren().add(rotate);
+
+       FadeTransition fadeTransition = new FadeTransition(Duration.millis(1000), rect);
+       fadeTransition.setFromValue(1);
+       fadeTransition.setToValue(0.3);
+       fadeTransition.setCycleCount(500);
+       fadeTransition.setAutoReverse(true);
+       parallelTransition.getChildren().add(fadeTransition);
+
+       ScaleTransition scaleTransition = new ScaleTransition(Duration.millis(1000), rect);
+       scaleTransition.setToX(2);
+       scaleTransition.setToY(2);
+       scaleTransition.setCycleCount(500);
+       scaleTransition.setAutoReverse(true);
+       parallelTransition.getChildren().add(scaleTransition);
+        //Configuring Group and Scene
         Group root = new Group();  
         root.getChildren().add(rect);  
         Scene scene = new Scene(root,600,400,Color.BLACK);  
         primaryStage.setScene(scene);  
         primaryStage.setTitle("Rotate Transition example");  
-        primaryStage.show();  
-          
-    }  
+        primaryStage.show();
+
+       parallelTransition.play();
+   }
     public static void main(String[] args) {  
         launch(args);  
     }  

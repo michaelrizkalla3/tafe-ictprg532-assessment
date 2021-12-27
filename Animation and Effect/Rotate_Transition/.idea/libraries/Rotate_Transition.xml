@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Rotate_Transition">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/dist/Rotate_Transition.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
