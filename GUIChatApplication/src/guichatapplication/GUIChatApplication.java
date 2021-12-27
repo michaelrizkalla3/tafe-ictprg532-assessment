@@ -16,6 +16,31 @@ public class GUIChatApplication {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                new Chat_Server().setVisible(true);
+                new Thread(new Runnable() {
+                    @Override
+                    public void run() {
+                        Chat_Server.start();
+                    }
+                }).start();
+            }
+        }).start();
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                new Chat_Client().setVisible(true);
+                new Thread(new Runnable() {
+                    @Override
+                    public void run() {
+                        Chat_Client.start();
+                    }
+                }).start();
+            }
+        }).start();
     }
     
 }

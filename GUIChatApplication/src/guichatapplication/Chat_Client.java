@@ -5,7 +5,13 @@
  */
 package guichatapplication;
 
+import javax.swing.*;
+
 import static guichatapplication.Chat_Server.dout;
+
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.net.Socket;
@@ -25,6 +31,17 @@ public class Chat_Client extends javax.swing.JFrame {
     
     public Chat_Client() {
         initComponents();
+        this.setTitle("Chat Client");
+        Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+        int centerX = (screenSize.width/2) + 100;
+        int centerY = screenSize.height/4;
+        this.setLocation(centerX, centerY);
+        jTextField1.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                jButton1ActionPerformed(e);
+            }
+        });
     }
 
     /**
@@ -90,6 +107,8 @@ public class Chat_Client extends javax.swing.JFrame {
         String msgOut="";
         msgOut=jTextField1.getText().trim();
         dout.writeUTF(msgOut);
+        appendChatText("Client(me)", msgOut);
+        jTextField1.setText(null);
         }catch(Exception e)
         {
         }
@@ -99,7 +118,8 @@ public class Chat_Client extends javax.swing.JFrame {
     /**
      * @param args the command line arguments
      */
-    public static void main(String args[]) {
+//    public static void main(String args[]) {
+    public static  void start() {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
@@ -124,11 +144,11 @@ public class Chat_Client extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new Chat_Client().setVisible(true);
-            }
-        });
+//        java.awt.EventQueue.invokeLater(new Runnable() {
+//            public void run() {
+//                new Chat_Client().setVisible(true);
+//            }
+//        });
         String msgIn="";
         try{
             s = new Socket("localhost", 3333);
@@ -137,13 +157,17 @@ public class Chat_Client extends javax.swing.JFrame {
         while (!msgIn.equals("exit")) 
         {
             msgIn = din.readUTF();
-            jTextArea1.setText(jTextArea1.getText().trim()+ "\n"+msgIn);
+            appendChatText("Server", msgIn);
         }
        
         }catch(Exception e)
                 {
                 }
           
+    }
+
+    private static void appendChatText(String from, String text) {
+        jTextArea1.setText(jTextArea1.getText().trim()+ "\n"+from+ ": " + text);
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
