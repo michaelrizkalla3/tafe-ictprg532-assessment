@@ -2,39 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f26a2fa9-4574-4179-8303-0582d0841ae9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Animation and Effect/Rotate_Transition/nbproject/jfx-impl_backup.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DragAndDropProjects/nbproject/jfx-impl_backup.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nbproject/jfx-impl_backup.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FxRectangle/nbproject/jfx-impl_backup.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Animation and Effect/Rotate_Transition/build/built-jar.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Animation and Effect/Rotate_Transition/build/built-jar.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Animation and Effect/Rotate_Transition/nbproject/build-impl.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Animation and Effect/Rotate_Transition/nbproject/build-impl.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Animation and Effect/Rotate_Transition/nbproject/genfiles.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Animation and Effect/Rotate_Transition/nbproject/genfiles.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Animation and Effect/Rotate_Transition/nbproject/jfx-impl.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Animation and Effect/Rotate_Transition/nbproject/jfx-impl.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Animation and Effect/Rotate_Transition/nbproject/private/private.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Animation and Effect/Rotate_Transition/nbproject/private/private.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Animation and Effect/Rotate_Transition/nbproject/project.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Animation and Effect/Rotate_Transition/nbproject/project.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DragAndDropProjects/nbproject/build-impl.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../DragAndDropProjects/nbproject/build-impl.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DragAndDropProjects/nbproject/genfiles.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../DragAndDropProjects/nbproject/genfiles.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DragAndDropProjects/nbproject/jfx-impl.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../DragAndDropProjects/nbproject/jfx-impl.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DragAndDropProjects/nbproject/private/private.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../DragAndDropProjects/nbproject/private/private.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DragAndDropProjects/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../DragAndDropProjects/nbproject/private/private.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DragAndDropProjects/nbproject/project.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../DragAndDropProjects/nbproject/project.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbproject/build-impl.xml" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/build-impl.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbproject/genfiles.properties" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/genfiles.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbproject/jfx-impl.xml" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/jfx-impl.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbproject/private/private.properties" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/private/private.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/private/private.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbproject/project.properties" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/project.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fxlines/FxLines.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fxlines/FxLines.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FxRectangle/nbproject/build-impl.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../FxRectangle/nbproject/build-impl.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FxRectangle/nbproject/genfiles.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../FxRectangle/nbproject/genfiles.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FxRectangle/nbproject/jfx-impl.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../FxRectangle/nbproject/jfx-impl.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FxRectangle/nbproject/private/private.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../FxRectangle/nbproject/private/private.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FxRectangle/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../FxRectangle/nbproject/private/private.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FxRectangle/nbproject/project.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../FxRectangle/nbproject/project.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GUIChatApplication/nbproject/build-impl.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../GUIChatApplication/nbproject/build-impl.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GUIChatApplication/nbproject/genfiles.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../GUIChatApplication/nbproject/genfiles.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GUIChatApplication/nbproject/private/private.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../GUIChatApplication/nbproject/private/private.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GUIChatApplication/nbproject/project.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../GUIChatApplication/nbproject/project.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
